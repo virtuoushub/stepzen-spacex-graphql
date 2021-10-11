@@ -1,7 +1,7 @@
 import "./index.css";
 import { gql, useQuery } from "@apollo/client";
 import StepZenLogo from "../light-blue.svg";
-const GET_QUERY = gql`
+export const GET_QUERY = gql`
   query MyQuery {
     rockets(limit: 5) {
       id
