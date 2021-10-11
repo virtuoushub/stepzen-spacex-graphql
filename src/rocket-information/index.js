@@ -20,7 +20,6 @@ const GET_QUERY = gql`
 
 function Rockets() {
     const { loading, error, data } = useQuery(GET_QUERY);
-    console.log('DATA', data);
 
     if (loading) return <p>Loading ...</p>;
 

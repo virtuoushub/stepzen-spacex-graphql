@@ -36,7 +36,6 @@ function App() {
 
 function Home() {
   const { loading, error, data } = useQuery(GET_QUERY);
-  console.log('DATA', data)
 
   if (loading) return <p>Loading ...</p>;
 
