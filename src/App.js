@@ -20,22 +20,8 @@ export const GET_QUERY = gql`
 `;
 
 function App() {
-
-  
   return (
-    <>
       <Router>
-        <div>
-          <nav>
-            <ul>
-              {/* <li>
-                <Link to='/'>Home</Link>
-              </li> */}
-              {/* <li>
-                <Link to='/rockets'>Rockets Information</Link>
-              </li> */}
-            </ul>
-          </nav>
           <Switch>
             <Route path="/rockets">
               <Rockets />
@@ -44,9 +30,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
-        </div>
       </Router>
-    </>
   );
 }
 
@@ -60,7 +44,6 @@ function Home() {
     <pre>{JSON.stringify(error, null, 2)}</pre>
   );
   return (
-    <>
       <div className="App">
         <header className="App-header">
           <img src={StepZenLogo} alt="StepZen Logo" width="200px" />
@@ -73,7 +56,6 @@ function Home() {
           <Link to='/rockets'>Rockets Information</Link>
         </header>
       </div>
-    </>
   );
 
 }
