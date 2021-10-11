@@ -26,7 +26,7 @@ function Rockets() {
   if (error) return <pre>{JSON.stringify(error, null, 2)}</pre>;
   const rockets = data.rockets;
   const listItems = rockets.map((rocket) => (
-    <li>
+    <li key={rocket.id}>
       Id: {rocket.id}, Name: {rocket.name}, Country: {rocket.country}, Cost:{" "}
       {rocket.cost_per_launch}
     </li>
