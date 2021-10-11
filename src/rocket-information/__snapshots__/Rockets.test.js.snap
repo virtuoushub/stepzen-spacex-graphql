@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app screen 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <header
+      class="App-header"
+    >
+      <img
+        alt="StepZen Logo"
+        src="light-blue.svg"
+        width="200px"
+      />
+      <p
+        style="margin-top: 40px;"
+      >
+        Top 5 Rockets information:
+      </p>
+      <ul>
+        <li>
+          Id: falcon1, Name: Falcon 1, Country: Republic of the Marshall Islands, Cost: 6700000
+        </li>
+        <li>
+          Id: falcon9, Name: Falcon 9, Country: United States, Cost: 50000000
+        </li>
+        <li>
+          Id: falconheavy, Name: Falcon Heavy, Country: United States, Cost: 90000000
+        </li>
+        <li>
+          Id: starship, Name: Starship, Country: United States, Cost: 7000000
+        </li>
+      </ul>
+    </header>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders error screen 1`] = `
+<DocumentFragment>
+  <pre>
+    {
+  "graphQLErrors": [],
+  "networkError": {},
+  "message": "A test error occurred"
+}
+  </pre>
+</DocumentFragment>
+`;
+
+exports[`renders loading screen 1`] = `
+<DocumentFragment>
+  <p>
+    Loading ...
+  </p>
+</DocumentFragment>
+`;
